@@ -1,0 +1,22 @@
+@import "~sass/_variables";
+.collections{
+    margin: 0.5em;
+    .collection{
+        margin: 0.5em 0;
+        padding: 0 0.5em;
+        .collection-bg{
+            background-position: center center;
+            background: no-repeat;
+            background-size: 100% 120%;
+            min-height: 240px;        }
+        .collection-body{
+            padding: 0.5em 1em;
+            background: $black;
+            color: $white;
+            font-size: 0.9em;
+            a{
+                color: $white;
+            }
+        }
+    }
+}

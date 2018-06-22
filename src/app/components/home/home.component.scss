@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+.slide{
+    img{
+        width: 100%;
+        min-height: 300px;
+    }
+}
+.search{
+    position: absolute;
+    top: 300px;
+    padding: 1em;
+}
+/********* media ************/
+@include media-breakpoint-down(md) {
+    .search{
+        top: 180px;
+    }
+}

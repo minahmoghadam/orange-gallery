@@ -1,0 +1,149 @@
+{
+    "id": 178,
+    "title": "Collection #178",
+    "description": "A curated collection by the team at Flipboard - news for our time, personalized for any interest.\r\nOne of Flipboard's product designers, Matt Safian, is a passionate and talented photographer. Flipboard's first collection features the world through his lens:",
+    "published_at": "2018-05-13T23:20:46-04:00",
+    "updated_at": "2018-05-21T10:50:09-04:00",
+    "curated": true,
+    "featured": false,
+    "total_photos": 10,
+    "private": false,
+    "share_key": null,
+    "tags": [],
+    "cover_photo": {
+        "id": "RIcxSInwlis",
+        "created_at": "2018-05-02T14:42:12-04:00",
+        "updated_at": "2018-05-13T21:46:09-04:00",
+        "width": 3264,
+        "height": 4352,
+        "color": "#FCFAFB",
+        "description": null,
+        "urls": {
+            "raw": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&s=696c1cccceb83c7956c2390914b8bf5a",
+            "full": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=9ca1c9585c241eb7d47b18d8314f5fbb",
+            "regular": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=96fda8194a2b7e86cadc5625479fdac8",
+            "small": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=fdf3d82206e105c2d131561bb8959f4b",
+            "thumb": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=9170c95fdb8615b96af0b440c4d9b822"
+        },
+        "links": {
+            "self": "https://api.unsplash.com/photos/RIcxSInwlis",
+            "html": "https://unsplash.com/photos/RIcxSInwlis",
+            "download": "https://unsplash.com/photos/RIcxSInwlis/download",
+            "download_location": "https://api.unsplash.com/photos/RIcxSInwlis/download"
+        },
+        "categories": [],
+        "sponsored": false,
+        "likes": 190,
+        "liked_by_user": false,
+        "current_user_collections": [],
+        "slug": null,
+        "user": {
+            "id": "cUwjdmsVCLo",
+            "updated_at": "2018-05-21T10:50:09-04:00",
+            "username": "flipboard",
+            "name": "Flipboard",
+            "first_name": "Flipboard",
+            "last_name": null,
+            "twitter_username": "Flipboard",
+            "portfolio_url": "http://flipboard.com",
+            "bio": "Stories for our time, personalized for your interests. Available in any app store and on the Web.",
+            "location": null,
+            "links": {
+                "self": "https://api.unsplash.com/users/flipboard",
+                "html": "https://unsplash.com/@flipboard",
+                "photos": "https://api.unsplash.com/users/flipboard/photos",
+                "likes": "https://api.unsplash.com/users/flipboard/likes",
+                "portfolio": "https://api.unsplash.com/users/flipboard/portfolio",
+                "following": "https://api.unsplash.com/users/flipboard/following",
+                "followers": "https://api.unsplash.com/users/flipboard/followers"
+            },
+            "profile_image": {
+                "small": "https://images.unsplash.com/profile-1525894446533-0d704e385a6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=e4336e7a5b98d2e335a78fba71309e2a",
+                "medium": "https://images.unsplash.com/profile-1525894446533-0d704e385a6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=a0d203727ca1a685ba46528b2f58186d",
+                "large": "https://images.unsplash.com/profile-1525894446533-0d704e385a6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=3bf6885d09e6d48725441ab797a09067"
+            },
+            "instagram_username": "flipboard",
+            "total_collections": 2,
+            "total_likes": 4,
+            "total_photos": 20
+        }
+    },
+    "preview_photos": [
+        {
+            "id": 652084,
+            "urls": {
+                "raw": "https://images.unsplash.com/photo-1525286978863-b3201d1894f0?ixlib=rb-0.3.5&s=98fa3fad8fdc7b4fb490b5d2d53c43cd",
+                "full": "https://images.unsplash.com/photo-1525286978863-b3201d1894f0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1d7323a1ec2c143dafd4e38e8b195948",
+                "regular": "https://images.unsplash.com/photo-1525286978863-b3201d1894f0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=fce0940f28d587afe1877d743d4322c1",
+                "small": "https://images.unsplash.com/photo-1525286978863-b3201d1894f0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=598c2cdb196e9c84e98698ef73a0481e",
+                "thumb": "https://images.unsplash.com/photo-1525286978863-b3201d1894f0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=2d96e6c28495444fb16769003e56468b"
+            }
+        },
+        {
+            "id": 652081,
+            "urls": {
+                "raw": "https://images.unsplash.com/photo-1525286944502-268e726aece1?ixlib=rb-0.3.5&s=93fd7cf175a318fbe6dad466b545267c",
+                "full": "https://images.unsplash.com/photo-1525286944502-268e726aece1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=47e35f780be1dc0ff4b3e7a819d5be2c",
+                "regular": "https://images.unsplash.com/photo-1525286944502-268e726aece1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=d2790002f8a78ca527cdf8f940ae7061",
+                "small": "https://images.unsplash.com/photo-1525286944502-268e726aece1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=6f4d03e902d16d1fb039688b8ea1d2b7",
+                "thumb": "https://images.unsplash.com/photo-1525286944502-268e726aece1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=7611c4ac94dfb607e06d83ca08d1f15c"
+            }
+        },
+        {
+            "id": 652071,
+            "urls": {
+                "raw": "https://images.unsplash.com/photo-1525286609212-043af56595b0?ixlib=rb-0.3.5&s=e145198f0e57162e66a77c752c02445d",
+                "full": "https://images.unsplash.com/photo-1525286609212-043af56595b0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f95477165757b72bd1f6fec6b647d83a",
+                "regular": "https://images.unsplash.com/photo-1525286609212-043af56595b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=6f82aecd43d8ee46c18b1299df0014ac",
+                "small": "https://images.unsplash.com/photo-1525286609212-043af56595b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=343364edbc572ff9a7604f2b60a2e35c",
+                "thumb": "https://images.unsplash.com/photo-1525286609212-043af56595b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=5b8a5672f61ea9ecac7d621b22709f27"
+            }
+        },
+        {
+            "id": 652068,
+            "urls": {
+                "raw": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&s=696c1cccceb83c7956c2390914b8bf5a",
+                "full": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=9ca1c9585c241eb7d47b18d8314f5fbb",
+                "regular": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=96fda8194a2b7e86cadc5625479fdac8",
+                "small": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=fdf3d82206e105c2d131561bb8959f4b",
+                "thumb": "https://images.unsplash.com/photo-1525286517008-f919dc752494?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=9170c95fdb8615b96af0b440c4d9b822"
+            }
+        }
+    ],
+    "user": {
+        "id": "cUwjdmsVCLo",
+        "updated_at": "2018-05-21T10:50:09-04:00",
+        "username": "flipboard",
+        "name": "Flipboard",
+        "first_name": "Flipboard",
+        "last_name": null,
+        "twitter_username": "Flipboard",
+        "portfolio_url": "http://flipboard.com",
+        "bio": "Stories for our time, personalized for your interests. Available in any app store and on the Web.",
+        "location": null,
+        "links": {
+            "self": "https://api.unsplash.com/users/flipboard",
+            "html": "https://unsplash.com/@flipboard",
+            "photos": "https://api.unsplash.com/users/flipboard/photos",
+            "likes": "https://api.unsplash.com/users/flipboard/likes",
+            "portfolio": "https://api.unsplash.com/users/flipboard/portfolio",
+            "following": "https://api.unsplash.com/users/flipboard/following",
+            "followers": "https://api.unsplash.com/users/flipboard/followers"
+        },
+        "profile_image": {
+            "small": "https://images.unsplash.com/profile-1525894446533-0d704e385a6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=e4336e7a5b98d2e335a78fba71309e2a",
+            "medium": "https://images.unsplash.com/profile-1525894446533-0d704e385a6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=a0d203727ca1a685ba46528b2f58186d",
+            "large": "https://images.unsplash.com/profile-1525894446533-0d704e385a6b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=3bf6885d09e6d48725441ab797a09067"
+        },
+        "instagram_username": "flipboard",
+        "total_collections": 2,
+        "total_likes": 4,
+        "total_photos": 20
+    },
+    "links": {
+        "self": "https://api.unsplash.com/collections/curated/178",
+        "html": "https://unsplash.com/collections/curated/178",
+        "photos": "https://api.unsplash.com/collections/curated/178/photos",
+        "download": "https://unsplash.com/curated_batches/196/download"
+    }
+}

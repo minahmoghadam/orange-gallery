@@ -1,0 +1,9 @@
+<div class="photo">
+    <a routerLink="/photo/{{photo.id}}">
+        <img class="rounded-top" [src]="photo.urls.small" [style.width.px]="(photo.width/ photo.height)*200">
+        <div class="photo-user" [style.width.px]="(photo.width/ photo.height)*200 | number">
+            <img class="user-img d-inline-block" [src]="photo.user.profile_image.small"/>
+            <span class="float-right"><i class="fa fa-heart"></i> {{photo.likes}}</span>
+        </div>
+    </a>
+</div>

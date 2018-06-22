@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~sass/_variables";
+.tag{
+    background: $white;
+    @include border-radius(5px);
+    padding: 5px;
+    margin: 3px;
+    font-size: 0.85em;
+    color: $color-2-2;
+}
+.collection-thumb{
+    height: 125px;
+}
+.collection-user{
+    background: $color-1-2;
+}

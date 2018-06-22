@@ -1,0 +1,19 @@
+@import "~sass/_variables";
+.navbar{
+    background: $color-1-1;
+    border-bottom: 1px solid $color-1-4;
+    .nav-item{
+        a{
+            color: $color-2-2;
+        }
+        .active-link{
+            color: $color-3-1;
+        }
+    }
+    .navbar-brand{
+        color: $color-2-2;
+    }
+}
+.logo{
+    height: 30px;
+}

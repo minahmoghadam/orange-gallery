@@ -1,0 +1,30 @@
+section{
+    padding: 2em 0;
+}
+.bg-black{
+    background: $black;
+    color: $white;
+}
+.content{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.title{
+    color: $color-2-2;
+    margin-bottom: 1em;
+}
+/*************************** zoom module**************************/
+.zoom-overlay-open{
+    nav{
+        display: none;
+    }
+}
+.zoom{
+    img{
+        cursor: zoom-in;
+        &.zoom-img{
+            cursor: zoom-out;
+        }
+    }
+}
+

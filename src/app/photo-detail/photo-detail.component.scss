@@ -1,0 +1,16 @@
+.single-photo{
+    img{
+        margin: 0 auto;
+        //max-height: 600px;
+    }
+    .user{
+        p{
+            margin-bottom: 0.5em;
+        }
+    }
+    .download-link{
+        position: absolute;
+        top: 1em;
+        left: 1.5em;
+    }
+}

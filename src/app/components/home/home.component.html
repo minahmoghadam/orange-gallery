@@ -1,0 +1,36 @@
+<div id="wrapper">
+    <app-header></app-header>
+    <div class="slide">
+        <img src="/assets/img/bg.jpeg"/>
+        <div class="search col-md-6 offset-md-3">
+            <div>
+                <form name="searchForm" (ngSubmit)="searchTxt(search.txt)" #searchForm="ngForm"  novalidate>
+                    <input type="text" class="form-control" name="search" [(ngModel)]="search.txt" #search="ngModel" placeholder="search .."/>
+                    <input class="d-none" type="submit" value="search"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-black">
+        <div class="content">
+            <div class="row m-2">
+                <div class="col-md-8 col-12">
+                    <div class="">
+                        <h3>share your best photos :)</h3>
+                        <p>Lorem  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <img class="d-block m-auto" [src]="randomImg" *ngIf="randomImg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h3 class="text-center title">Popular Images</h3>
+            <app-photos [page]="1" [perPage]="20" orderBy="popular"></app-photos>
+        </div>
+    </section>
+</div>
