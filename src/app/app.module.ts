@@ -18,7 +18,7 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { PhotosComponent } from './components/photos/photos.component';
 import { CollectionDetailComponent } from './components/collection-detail/collection-detail.component';
 import { PhotoComponent } from './components/photo/photo.component';
-import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
+import { PhotoDetailComponent } from './components/photo-detail/photo-detail.component';
 
 @NgModule({
     declarations: [

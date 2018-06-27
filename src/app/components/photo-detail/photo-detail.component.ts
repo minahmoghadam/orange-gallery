@@ -1,6 +1,6 @@
 import { getTestBed } from '@angular/core/testing';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ApiService } from './../services/api.service';
+import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

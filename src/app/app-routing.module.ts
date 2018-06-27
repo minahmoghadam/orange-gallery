@@ -5,7 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { CollectionDetailComponent } from './components/collection-detail/collection-detail.component';
 import { SearchComponent } from './components/search/search.component';
-import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
+import { PhotoDetailComponent } from './components/photo-detail/photo-detail.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
