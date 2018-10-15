@@ -4,8 +4,7 @@ import { HttpRequest, HttpResponse, HttpErrorResponse, HttpHandler, HttpEvent, H
 import { CookieService } from 'ngx-cookie-service';
 import { Router} from '@angular/router';
 import { environment } from './../../environments/environment';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable()
 export class Auth implements HttpInterceptor{
@@ -18,23 +17,26 @@ export class Auth implements HttpInterceptor{
                 'Accept-Version': 'v1'
             }
         });
-        return next.handle(authReq).map((event: HttpEvent<any>) => {
-            if (event instanceof HttpResponse) {
-               return event;
-            }
-        })
-        .catch((error: any) => {
-            if (error instanceof HttpErrorResponse) {
-                if (error.status == 401) {
+        return next.handle(authReq).pipe(
+            map((event: HttpEvent<any>) => {
+                if (event instanceof HttpResponse) {
+                    return event;
                 }
-                else{
-                    // server error
+            }),
+            catchError((error: any) => {
+                if (error instanceof HttpErrorResponse) {
+                    if (error.status == 401) {
+                        //Do
+                    }
+                    else{
+                        // server error
+                        return Observable.throw(error);
+                    }
+                } else {
                     return Observable.throw(error);
                 }
-            } else {
-                return Observable.throw(error);
-            }
-        })
+            })
+        )
     }
 
 }
