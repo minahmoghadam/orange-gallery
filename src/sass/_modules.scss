@@ -19,6 +19,9 @@ section{
         display: none;
     }
 }
+.zoom-img, .zoom-img-wrap{
+    z-index: 99999 !important;
+}
 .zoom{
     img{
         cursor: zoom-in;

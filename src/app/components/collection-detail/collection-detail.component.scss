@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~sass/_variables";
 .tag{
-    background: $white;
+    background: $color-1-4;
     @include border-radius(5px);
     padding: 5px;
     margin: 3px;

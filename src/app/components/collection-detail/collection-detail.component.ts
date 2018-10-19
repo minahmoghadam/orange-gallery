@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ApiService } from './../../services/api.service';
+import { Collection } from "./../../models/collection";
+import { Photo } from "./../../models/photo";
 
 @Component({
     selector: 'app-collection-detail',
@@ -9,13 +11,12 @@ import { ApiService } from './../../services/api.service';
     providers: [ApiService]
 })
 export class CollectionDetailComponent implements OnInit {
-
-    result: any = [];
-    collection: any = {};
-    collectionPhotos: any = [];
+    
+    collection: Collection;
+    result: Photo[];
+    collectionPhotos: Photo[];
     collectionId: number;
     cover: string;
-
     perPage: number;
     page: number;
 
@@ -32,7 +33,7 @@ export class CollectionDetailComponent implements OnInit {
     }
     getCollection(id){
         this.api.getCollectionData(id).subscribe(
-            (res: Response) =>{
+            (res) =>{
                 this.collection = res;
                 this.cover = this.collection.cover_photo.urls.regular;
             }
@@ -40,7 +41,7 @@ export class CollectionDetailComponent implements OnInit {
     }
     getCollectionPhotos(){
         this.api.getCollectionPhotos(this.collectionId, this.perPage, this.page).subscribe(
-            (res: Response) =>{
+            (res) =>{
                 this.result = res;
                 if(this.result.length > 0){
                     this.collectionPhotos = this.result;

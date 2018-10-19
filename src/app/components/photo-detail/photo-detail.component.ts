@@ -2,6 +2,7 @@ import { getTestBed } from '@angular/core/testing';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
+import { Collection } from "./../../models/collection";
 
 @Component({
   selector: 'app-photo-detail',
@@ -14,7 +15,7 @@ export class PhotoDetailComponent implements OnInit {
     constructor(private api:ApiService, private activeRouter:ActivatedRoute) {}
 
     photoId : string;
-    photo: any = {};
+    photo: Collection;
 
     ngOnInit() {
         this.activeRouter.params.subscribe(params=> {
@@ -24,7 +25,7 @@ export class PhotoDetailComponent implements OnInit {
     }
     getPhoto(id){
         this.api.getPhotoData(id).subscribe(
-            (res: Response) =>{
+            (res) =>{
                 this.photo = res;
             }
         )

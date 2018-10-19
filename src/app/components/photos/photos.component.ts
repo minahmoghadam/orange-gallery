@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from './../../services/api.service';
+import { Photo } from "./../../models/photo";
 
 @Component({
     selector: 'app-photos',
@@ -7,7 +8,7 @@ import { ApiService } from './../../services/api.service';
     providers: [ ApiService ]
 })
 export class PhotosComponent implements OnInit {
-    result: any = [];
+    result: Photo[];
     photos: any = [];
 
     @Input() perPage: number;
@@ -21,7 +22,7 @@ export class PhotosComponent implements OnInit {
     }
     listPhotos(){
         this.api.getListPhotos(this.perPage, this.page, this.orderBy).subscribe(
-            (res: Response)=> {
+            (res)=> {
                 this.result = res;
                 if(this.result.length > 0){
                     for(var i=0;i<this.perPage;i++){

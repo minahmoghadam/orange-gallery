@@ -22,19 +22,6 @@ export class Auth implements HttpInterceptor{
                 if (event instanceof HttpResponse) {
                     return event;
                 }
-            }),
-            catchError((error: any) => {
-                if (error instanceof HttpErrorResponse) {
-                    if (error.status == 401) {
-                        //Do
-                    }
-                    else{
-                        // server error
-                        return Observable.throw(error);
-                    }
-                } else {
-                    return Observable.throw(error);
-                }
             })
         )
     }

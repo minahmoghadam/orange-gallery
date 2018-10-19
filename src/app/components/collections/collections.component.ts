@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from './../../services/api.service';
+import { Collection } from "./../../models/collection";
 
 @Component({
     selector: 'app-collections',
@@ -8,11 +9,11 @@ import { ApiService } from './../../services/api.service';
     providers: [ ApiService ]
 })
 export class CollectionsComponent implements OnInit {
-    result: any = [];
+    result: Collection[];
     collections: any = [];
-
     perPage: number;
     page: number;
+    
     constructor(private api: ApiService) { }
 
     ngOnInit() {
@@ -22,10 +23,12 @@ export class CollectionsComponent implements OnInit {
     }
     listCollection(){
         this.api.getCollectionList(this.perPage, this.page).subscribe(
-            (res: Response) =>{
+            (res) =>{
                 this.result = res;
-                for(var i=0; i<this.perPage; i++){
-                    this.collections.push(this.result[i]) ;
+                if(this.result.length > 0){
+                    for(var i=0; i<this.perPage; i++){
+                        this.collections.push(this.result[i]) ;
+                    }
                 }
             }
         )
