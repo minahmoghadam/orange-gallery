@@ -1,7 +1,7 @@
 # Orange Gallery
 An Angular5 web application using unsplash api
 
-This project was generated with :
+## Built With
 
 - Angular CLI 1.7.4.
 - Angular 5.2
@@ -33,21 +33,22 @@ Use the `ng build --prod --build-optimizer` for a production build.
 
 
 
+
 ## Screenshots
 - Home
 
-![N|Solid](screenshots/home.png)
+![Home](screenshots/home.jpg)
 
 - Photo
 
-![N|Solid](screenshots/photo.png)
+![Photo](screenshots/photo.jpg)
 
 
 - Collections
 
-![N|Solid](screenshots/collection-list.png)
+![Collections](screenshots/collection-list.jpg)
 
 
 - Collection
 
-![N|Solid](screenshots/collection.png)
+![Collection](screenshots/collection.jpg)
