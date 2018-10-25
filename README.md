@@ -1,10 +1,10 @@
 # Orange Gallery
-An Angular5 web application using unsplash api
+An Angular6 web application using unsplash api
 
 ## Built With
 
-- Angular CLI 1.7.4.
-- Angular 5.2
+- Angular CLI
+- Angular 6.1
 - Bootstrap 4
 - [Unsplash api](https://unsplash.com/documentation)
 
