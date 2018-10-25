@@ -33,3 +33,21 @@ Use the `ng build --prod --build-optimizer` for a production build.
 
 
 
+## Screenshots
+- Home
+
+![N|Solid](screenshots/home.png)
+
+- Photo
+
+![N|Solid](screenshots/photo.png)
+
+
+- Collections
+
+![N|Solid](screenshots/collection-list.png)
+
+
+- Collection
+
+![N|Solid](screenshots/collection.png)
