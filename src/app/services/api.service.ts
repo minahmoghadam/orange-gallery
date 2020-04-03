@@ -55,7 +55,7 @@ export class ApiService {
      */
     getCollectionList(perPage, page):Observable<Collection[]>{
         return this.http.get<Collection[]>(
-            this.isLocal? 'api/collections.json': this.baseUrl + '/collections/curated?per_page=' + perPage + '&page='+ page
+            this.isLocal? 'api/collections.json': this.baseUrl + '/collections?per_page=' + perPage + '&page='+ page
         );
     }
 
@@ -64,7 +64,7 @@ export class ApiService {
      */
     getCollectionData(id): Observable<Collection>{
         return this.http.get<Collection>(
-            this.isLocal? 'api/collection.json': this.baseUrl + '/collections/curated/'+ id
+            this.isLocal? 'api/collection.json': this.baseUrl + '/collections/'+ id
         );
     }
 
@@ -73,7 +73,7 @@ export class ApiService {
      */
     getCollectionPhotos(id, perPage, page): Observable<Photo[]>{
         return this.http.get<Photo[]>(
-            this.isLocal? 'api/collection_photos.json': this.baseUrl + '/collections/curated/'+ id + '/photos?per_page=' + perPage + '&page='+ page
+            this.isLocal? 'api/collection_photos.json': this.baseUrl + '/collections/'+ id + '/photos?per_page=' + perPage + '&page='+ page
         );
     }
 }
