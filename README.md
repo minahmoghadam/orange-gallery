@@ -5,7 +5,6 @@ An Angular6 web application using unsplash api
 
 - Angular CLI
 - Angular 6.1
-- Bootstrap 4
 - [Unsplash api](https://unsplash.com/documentation)
 
 

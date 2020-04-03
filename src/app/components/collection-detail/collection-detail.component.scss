@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
 @import "~sass/_variables";
+@import "~sass/_mixins";
 .tag{
     background: $color-1-4;
     @include border-radius(5px);

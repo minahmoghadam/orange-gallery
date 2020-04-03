@@ -23,7 +23,6 @@
     "@angular/router": "6.1.10",
     "angular-font-awesome": "^3.1.2",
     "angular-zoom": "0.0.5",
-    "bootstrap": "^4.1.1",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
     "ngx-cookie-service": "^1.0.10",
