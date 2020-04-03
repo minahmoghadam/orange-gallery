@@ -29,7 +29,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Use the `ng build --prod --build-optimizer` for a production build.
 
 ## Contributors
-[**Mina Hosseini Moghadam**](http://linkedin.com/in/minahm)
+[**Mina Hosseini Moghadam**](https://www.linkedin.com/in/minahmoghadam)
 
 
 
