@@ -1,16 +1,20 @@
-<nav class="navbar fixed-top flex-row">
+<nav class="navbar fixed-top row">
     <a class="navbar-brand" href="/">
         <img src="/assets/img/logo.png" class="logo"/>
         <span>Orange</span>
     </a>
     <div class="main-nav" id="navbar">
-        <ul class="navbar-nav flex-row">
+        <ul class="navbar-nav row">
             <li class="nav-item">
                 <a class="nav-link" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/collections" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Collection</a>
-            </li>
+			</li>
+			<form class="search" name="searchForm" (ngSubmit)="searchTxt(search.txt)" #searchForm="ngForm"  novalidate>
+				<input type="text" class="form-control" name="search" [(ngModel)]="search.txt" #search="ngModel" placeholder="search .."/>
+				<input class="d-none" type="submit" value="search"/>
+			</form>
         </ul>
     </div>
 </nav>

@@ -11,11 +11,6 @@ section {
 	flex-wrap: wrap;
 }
 
-.bg-black {
-	background: $black;
-	color: $white;
-}
-
 .content {
 	max-width: 1350px;
 	margin: 0 auto;
@@ -64,6 +59,10 @@ section {
 	border-top-left-radius: .25rem;
 	border-top-right-radius: .25rem;
 }
+.no-padding {
+	padding: 0 !important;
+}
+
 /*************************** zoom module**************************/
 .zoom-overlay-open {
 	nav {

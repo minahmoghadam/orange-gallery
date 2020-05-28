@@ -1,6 +1,5 @@
 @import "~sass/_variables";
 .navbar {
-	width: 100%;
 	background: $color-1-1;
 	border-bottom: 1px solid $color-1-4;
 	padding: 1rem 2rem;
@@ -27,4 +26,22 @@
 .logo {
 	height: 20px;
 	margin-right: 4px;
+}
+.search {
+	position: absolute;
+	right: 2rem;
+	input[type = text] {
+		padding: 0.5em;
+		border: none;
+		outline: none;
+		&:focus {
+			border: none;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.search{
+		top: 180px;
+	}
 }

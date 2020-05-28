@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ApiService } from './../../services/api.service';
-import { Router } from '@angular/router';
 import { Photo } from "./../../models/photo";
 
 @Component({
@@ -13,24 +12,17 @@ import { Photo } from "./../../models/photo";
 export class HomeComponent implements OnInit {
     rPhoto: Photo;
     randomImg: string;
-    constructor(private api: ApiService, private router: Router) { }
+	constructor(private api: ApiService) { }
 
     ngOnInit() {
         this.randomPhoto();
     }
-    searchTxt(txt){
-        // replace space with dash
-        var stxt = txt.replace(/\s+/g, '-');
-
-        //redirect to search page
-        this.router.navigate(['/search/photos/'+ stxt]);
-    }
     randomPhoto(){
-        var orientation = "landscape";
+		let orientation = "landscape";
         this.api.getRandomPhoto(orientation).subscribe(
             (res)=> {
                 this.rPhoto = res;
-                this.randomImg = this.rPhoto.urls.thumb;
+                this.randomImg = this.rPhoto.urls.regular;
             }
         );
     };
