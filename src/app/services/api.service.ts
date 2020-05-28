@@ -16,7 +16,7 @@ export class ApiService {
     /* @name  getRandomPhoto
      * @description get random photo
      */
-    getRandomPhoto(orientation):Observable<Photo>{
+    getRandomPhoto(orientation: string):Observable<Photo> {
         return this.http.get<Photo>(
             this.baseUrl + '/photos/random?orientation='+ orientation
         );
@@ -25,26 +25,26 @@ export class ApiService {
     /* @name  getListPhotos
      * @description get list of photos
      */
-    getListPhotos(perPage, page, orderBy):Observable<Photo[]>{
+    getListPhotos(perPage: number, page: number, orderBy: string):Observable<Photo[]> {
         return this.http.get<Photo[]>(
-            this.baseUrl + '/photos/?per_page=' + perPage + '&page='+ page + '&order_by='+ orderBy
+            this.baseUrl + '/photos/?per_page=' + perPage + '&page='+ page + '&order_by=' + orderBy
         );
     };
 
     /* @name  getPhotoData
      * @description get details of photo
      */
-    getPhotoData(id):Observable<Collection>{
+    getPhotoData(id: string):Observable<Collection> {
         return this.http.get<Collection>(
-            this.baseUrl + '/photos/'+id
+            this.baseUrl + '/photos/' + id
         );
     };
     /* @name  getSearchResult
      * @description get result of search
      */
-    getSearchResult(query, perPage, page):Observable<Photo[]>{
+    getSearchResult(query: string, perPage: number, page: number):Observable<Photo[]> {
         return this.http.get<Photo[]>(
-            this.baseUrl + '/photos/search?query='+ query + '?per_page=' + perPage + '&page='+ page
+            this.baseUrl + '/photos/search?query='+ query + '?per_page=' + perPage + '&page=' + page
         );
     }
 
@@ -53,7 +53,7 @@ export class ApiService {
     /* @name  getCollectionList
      * @description get list of collections
      */
-    getCollectionList(perPage, page):Observable<Collection[]>{
+    getCollectionList(perPage: number, page: number):Observable<Collection[]> {
         return this.http.get<Collection[]>(
             this.isLocal? 'api/collections.json': this.baseUrl + '/collections?per_page=' + perPage + '&page='+ page
         );
@@ -62,18 +62,18 @@ export class ApiService {
     /* @name  getCollectionData
      * @description get detail of collection
      */
-    getCollectionData(id): Observable<Collection>{
+    getCollectionData(id: number): Observable<Collection> {
         return this.http.get<Collection>(
-            this.isLocal? 'api/collection.json': this.baseUrl + '/collections/'+ id
+            this.isLocal? 'api/collection.json': this.baseUrl + '/collections/' + id
         );
     }
 
     /* @name  getCollectionPhotos
      * @description get photos of collection
      */
-    getCollectionPhotos(id, perPage, page): Observable<Photo[]>{
+    getCollectionPhotos(id: number, perPage: number, page: number): Observable<Photo[]> {
         return this.http.get<Photo[]>(
-            this.isLocal? 'api/collection_photos.json': this.baseUrl + '/collections/'+ id + '/photos?per_page=' + perPage + '&page='+ page
+            this.isLocal? 'api/collection_photos.json': this.baseUrl + '/collections/' + id + '/photos?per_page=' + perPage + '&page='+ page
         );
     }
 }

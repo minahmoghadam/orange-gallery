@@ -1,5 +1,4 @@
-import { getTestBed } from '@angular/core/testing';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { Collection } from "./../../models/collection";
@@ -12,26 +11,27 @@ import { Collection } from "./../../models/collection";
 })
 export class PhotoDetailComponent implements OnInit {
 
-    constructor(private api:ApiService, private activeRouter:ActivatedRoute) {}
+    constructor(private api: ApiService, private activeRouter: ActivatedRoute) {}
 
-    photoId : string;
+    photoId: string;
     photo: Collection;
 
     ngOnInit() {
-        this.activeRouter.params.subscribe(params=> {
+        this.activeRouter.params.subscribe(params => {
             this.photoId = params.id
             this.getPhoto(this.photoId);
         })
-    }
-    getPhoto(id){
+	}
+	
+    getPhoto(id: string) {
         this.api.getPhotoData(id).subscribe(
-            (res) =>{
+            (res) => {
                 this.photo = res;
             }
         )
-    }
-    downloadPhoto(url){
+	}
+	
+    downloadPhoto(url: string) {
         window.location.href = url;
     }
-
 }

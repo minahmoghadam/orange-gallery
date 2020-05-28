@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ApiService } from './../../services/api.service';
 import { Collection } from "./../../models/collection";
 
@@ -21,19 +21,19 @@ export class CollectionsComponent implements OnInit {
         this.page = 1;
         this.listCollection();
     }
-    listCollection(){
+    listCollection() {
         this.api.getCollectionList(this.perPage, this.page).subscribe(
-            (res) =>{
+            (res) => {
                 this.result = res;
                 if(this.result.length > 0){
-                    for(let i=0; i<this.perPage; i++){
+                    for(let i=0; i< this.perPage; i++){
                         this.collections.push(this.result[i]) ;
                     }
                 }
             }
         )
     }
-    collectionScroll(){
+    collectionScroll() {
         this.page += 1;
         this.listCollection();
     }

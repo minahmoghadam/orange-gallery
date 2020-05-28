@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,11 +9,9 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
     constructor(private router: Router) { }
 
-	searchTxt(txt) {
+	searchTxt(txt: string) {
         // replace space with dash
         let stxt = txt.replace(/\s+/g, '-');
-
-        //redirect to search page
         this.router.navigate(['/search/photos/'+ stxt]);
     }
 }

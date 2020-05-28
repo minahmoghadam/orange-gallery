@@ -25,29 +25,28 @@ export class CollectionDetailComponent implements OnInit {
     ngOnInit() {
         this.perPage = 10;
         this.page = 1;
-        this.activeRouter.params.subscribe(params=> {
+        this.activeRouter.params.subscribe(params => {
             this.collectionId = params.id
             this.getCollection(this.collectionId);
             this.getCollectionPhotos();
         })
     }
-    getCollection(id){
+    getCollection(id: number) {
         this.api.getCollectionData(id).subscribe(
-            (res) =>{
+            (res) => {
                 this.collection = res;
                 this.cover = this.collection.cover_photo.urls.regular;
             }
         )
     }
-    getCollectionPhotos(){
+    getCollectionPhotos() {
         this.api.getCollectionPhotos(this.collectionId, this.perPage, this.page).subscribe(
-            (res) =>{
+            (res) => {
                 this.result = res;
-                if(this.result.length > 0){
+                if(this.result.length > 0) {
                     this.collectionPhotos = this.result;
                 }
             }
         )
     }
-
 }

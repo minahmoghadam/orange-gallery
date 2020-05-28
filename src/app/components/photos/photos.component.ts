@@ -14,26 +14,26 @@ export class PhotosComponent implements OnInit {
 
     @Input() perPage: number;
     @Input() page: number;
-    @Input() orderBy: String;
+    @Input() orderBy: string;
 
     constructor(private api: ApiService) { }
 
     ngOnInit() {
         this.listPhotos();
     }
-    listPhotos(){
+    listPhotos() {
         this.api.getListPhotos(this.perPage, this.page, this.orderBy).subscribe(
             (res)=> {
                 this.result = res;
-                if(this.result.length > 0){
-                    for(let i=0;i<this.perPage;i++){
+                if(this.result.length > 0) {
+                    for(let i=0;i<this.perPage;i++) {
                         this.photos.push(this.result[i]) ;
                     }
                 }
             }
         );
     };
-    photosScroll(){
+    photosScroll() {
         this.page += 1;
         this.listPhotos();
     }

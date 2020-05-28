@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ApiService } from './../../services/api.service';
 import { Photo } from "./../../models/photo";
 
@@ -16,8 +15,9 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.randomPhoto();
-    }
-    randomPhoto(){
+	}
+	
+    randomPhoto() {
 		let orientation = "landscape";
         this.api.getRandomPhoto(orientation).subscribe(
             (res)=> {
@@ -26,5 +26,4 @@ export class HomeComponent implements OnInit {
             }
         );
     };
-
 }
