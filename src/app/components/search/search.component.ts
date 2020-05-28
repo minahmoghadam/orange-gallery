@@ -34,7 +34,7 @@ export class SearchComponent implements OnInit {
             (res) =>{
                 this.result = res;
                 if(this.result.length > 0){
-                    for(var i=0; i<this.perPage; i++){
+                    for(let i=0; i<this.perPage; i++){
                         this.searchResult.push(this.result[i]) ;
                     }
                 }

@@ -11,7 +11,7 @@ export class HeaderComponent {
 
 	searchTxt(txt) {
         // replace space with dash
-        var stxt = txt.replace(/\s+/g, '-');
+        let stxt = txt.replace(/\s+/g, '-');
 
         //redirect to search page
         this.router.navigate(['/search/photos/'+ stxt]);

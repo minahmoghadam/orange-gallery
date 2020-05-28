@@ -26,7 +26,7 @@ export class CollectionsComponent implements OnInit {
             (res) =>{
                 this.result = res;
                 if(this.result.length > 0){
-                    for(var i=0; i<this.perPage; i++){
+                    for(let i=0; i<this.perPage; i++){
                         this.collections.push(this.result[i]) ;
                     }
                 }
