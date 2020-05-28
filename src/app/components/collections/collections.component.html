@@ -1,31 +1,29 @@
 <div id="wrapper">
     <app-header></app-header>
-    <div class="pt-5">
-        <section class="content">
-            <h3 class="text-center title">Collections</h3>
-            <div class="row collections">
-                <div class="search-results"
-                    infiniteScroll
-                    [infiniteScrollDistance]="1"
-                    [infiniteScrollThrottle]="150"
-                    (scrolled)="collectionScroll()">
-                </div>
-                <div class="collection col-xl-4 col-md-6 col-sm-12 col-12" *ngFor="let col of collections">
-                    <div class="row no-gutters">
-                        <div class="col-md-12 col-12 collection-bg" [style.backgroundImage]="'url('+ col.cover_photo.urls.small +')'"></div>
-                        <div class="col-md-12 col-12">
-                            <div class="collection-body">
-                                <a routerLink="/collection/{{col.id}}">
-                                    <span>{{col.title}}</span>
-                                    <span class="float-right"><i class="fa fa-image"></i> {{col.total_photos}}</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+	<section class="content">
+		<h3 class="text-center title">Collections</h3>
+		<div class="row collections">
+			<div class="search-results"
+				infiniteScroll
+				[infiniteScrollDistance]="1"
+				[infiniteScrollThrottle]="150"
+				(scrolled)="collectionScroll()">
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12 col-12" *ngFor="let col of collections">
+				<div class="row collection">
+					<div class="col-md-12 col-12 collection-bg" [style.backgroundImage]="'url('+ col.cover_photo.urls.small +')'"></div>
+					<div class="col-md-12 col-12">
+						<div class="collection-body">
+							<a routerLink="/collection/{{col.id}}">
+								<span>{{col.title}}</span>
+								<span class="float-right"><i class="fa fa-image"></i> {{col.total_photos}}</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
 
 

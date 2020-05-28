@@ -4,7 +4,8 @@ import { Photo } from "./../../models/photo";
 
 @Component({
     selector: 'app-photos',
-    templateUrl: './photos.component.html',
+	templateUrl: './photos.component.html',
+	styleUrls: ['./photos.component.scss'],
     providers: [ ApiService ]
 })
 export class PhotosComponent implements OnInit {

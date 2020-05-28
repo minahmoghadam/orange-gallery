@@ -1,16 +1,25 @@
-.single-photo{
-    img{
-        margin: 0 auto;
-        //max-height: 600px;
-    }
-    .user{
-        p{
-            margin-bottom: 0.5em;
-        }
-    }
-    .download-link{
-        position: absolute;
-        top: 1em;
-        left: 1.5em;
-    }
+@import "~sass/_variables";
+.single-photo {
+	.profile-img {
+		border-radius: 100%;
+		border: 2px solid $color-3-1;
+	}
+
+	img {
+		margin: 0 auto;
+	}
+	.user {
+		p {
+			margin-bottom: 0.5em;
+		}
+	}
+	.download-link {
+		position: absolute;
+		top: 1em;
+		left: 1.5em;
+	}
+	.photo-description {
+		margin-left: 1rem;
+		padding: 0.5rem;
+	}
 }

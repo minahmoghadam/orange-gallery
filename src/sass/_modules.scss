@@ -1,33 +1,84 @@
-section{
-    padding: 2em 0;
+.wrapper {
+	width: 100%;
 }
-.bg-black{
-    background: $black;
-    color: $white;
+
+section {
+  padding: 2em 0;
 }
-.content{
-    max-width: 1350px;
-    margin: 0 auto;
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
 }
-.title{
-    color: $color-2-2;
-    margin-bottom: 1em;
+
+.bg-black {
+	background: $black;
+	color: $white;
+}
+
+.content {
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.title {
+	color: $color-2-2;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.d-none {
+	display: none;
+}
+.d-block {
+	display: block;
+}
+
+.fa {
+	margin: 0 3px;
+}
+
+.rounded-top {
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
 }
 /*************************** zoom module**************************/
-.zoom-overlay-open{
-    nav{
-        display: none;
-    }
+.zoom-overlay-open {
+	nav {
+		display: none;
+	}
 }
-.zoom-img, .zoom-img-wrap{
-    z-index: 99999 !important;
+.zoom-img, .zoom-img-wrap {
+  z-index: 99999 !important;
 }
-.zoom{
-    img{
-        cursor: zoom-in;
-        &.zoom-img{
-            cursor: zoom-out;
-        }
-    }
+.zoom {
+	img {
+		cursor: zoom-in;
+		&.zoom-img{
+			cursor: zoom-out;
+		}
+	}
 }
 

@@ -1,19 +1,30 @@
 @import "~sass/_variables";
-.navbar{
-    background: $color-1-1;
-    border-bottom: 1px solid $color-1-4;
-    .nav-item{
-        a{
-            color: $color-2-2;
-        }
-        .active-link{
-            color: $color-3-1;
-        }
-    }
-    .navbar-brand{
-        color: $color-2-2;
-    }
+.navbar {
+	width: 100%;
+	background: $color-1-1;
+	border-bottom: 1px solid $color-1-4;
+	padding: 1rem 2rem;
+	.navbar-nav {
+		margin: 0;
+		.nav-item {
+			list-style-type: none;
+			padding: 0.3rem 0.5rem;
+			a {
+				color: $color-2-2;
+			}
+			.active-link {
+				color: $color-3-1;
+			}
+		}
+	}
+	
+	.navbar-brand {
+		color: $color-2-2;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
 }
-.logo{
-    height: 30px;
+.logo {
+	height: 20px;
+	margin-right: 4px;
 }

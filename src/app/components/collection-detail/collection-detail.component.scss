@@ -1,16 +1,46 @@
 @import "~sass/_variables";
 @import "~sass/_mixins";
-.tag{
-    background: $color-1-4;
-    @include border-radius(5px);
-    padding: 5px;
-    margin: 3px;
-    font-size: 0.85em;
-    color: $color-2-2;
+
+.profile-img {
+	border-radius: 100%;
+	border: 2px solid $color-3-1;
 }
-.collection-thumb{
-    height: 125px;
+.tags {
+	margin: 0.5rem 0 0.5em 1rem;
+	.tag {
+		background: $color-1-4;
+		@include border-radius(5px);
+		padding: 5px;
+		margin: 3px;
+		font-size: 0.85em;
+		color: $color-2-2;
+	}
 }
-.collection-user{
-    background: $color-1-2;
+
+.thumbs {
+	justify-content: start;
+	margin: 1rem 0 0 1rem;
+	.collection-thumb {
+		padding: 0 0.4rem;
+		img {
+			height: 125px;
+		}
+	}
+}
+
+.collection-user {
+	background: $color-1-2;
+	padding: 2rem;
+	margin-left: 1rem;
+}
+.collection-photo {
+	padding-top: 2rem;
+}
+
+.photos {
+	justify-content: space-around;
+	
+}
+.photo-holder {
+	padding: 0.4rem 0;
 }

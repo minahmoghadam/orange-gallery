@@ -1,6 +1,6 @@
-<div class="row justify-content-around p-3">
+<div class="row photos-container">
     <div class="search-results" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="150" (scrolled)="photosScroll()"></div>
-    <div class="pb-3" *ngFor="let photo of photos">
+    <div class="photo-holder" *ngFor="let photo of photos">
         <app-photo [photo]="photo"></app-photo>
     </div>
 </div>
