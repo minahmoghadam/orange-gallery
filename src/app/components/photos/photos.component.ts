@@ -20,19 +20,21 @@ export class PhotosComponent implements OnInit {
 
     ngOnInit() {
         this.listPhotos();
-    }
+	}
+	
     listPhotos() {
         this.api.getListPhotos(this.perPage, this.page, this.orderBy).subscribe(
             (res)=> {
                 this.result = res;
                 if(this.result.length > 0) {
-                    for(let i=0;i<this.perPage;i++) {
+                    for(let i=0; i<this.perPage; i++) {
                         this.photos.push(this.result[i]) ;
                     }
                 }
             }
         );
-    };
+	};
+	
     photosScroll() {
         this.page += 1;
         this.listPhotos();

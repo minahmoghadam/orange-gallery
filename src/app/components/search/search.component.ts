@@ -15,7 +15,8 @@ export class SearchComponent implements OnInit {
     perPage: number;
     page: number;
     search: string;
-    searchResult: any = [];
+	searchResult: any = [];
+	resultCount: number = 0;
 
     constructor(private api: ApiService, private activeRouter: ActivatedRoute) { }
 
@@ -32,7 +33,8 @@ export class SearchComponent implements OnInit {
     searchTxt(txt: string) {
         this.api.getSearchResult(txt, this.perPage, this.page).subscribe(
             (res) => {
-                this.result = res;
+                this.result = res.results;
+                this.resultCount = res.total;
                 if(this.result.length > 0) {
                     for(let i=0; i< this.perPage; i++) {
                         this.searchResult.push(this.result[i]);
@@ -40,7 +42,8 @@ export class SearchComponent implements OnInit {
                 }
             }
         )
-    }
+	}
+	
     photosScroll() {
         this.page += 1;
         this.searchTxt(this.search);

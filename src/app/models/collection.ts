@@ -1,7 +1,7 @@
 import { User } from "./user";
 import { Photo, PhotoLinks, PreviewPhoto } from "./photo";
 
-export interface Collection{
+export interface Collection {
     cover_photo: Photo,
     curated: boolean,
     description: string,
@@ -18,6 +18,6 @@ export interface Collection{
     updated_at: string,
     user: User
 }
-export interface Tag{
+export interface Tag {
     title: string
 }

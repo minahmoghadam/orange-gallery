@@ -1,4 +1,4 @@
-export interface User{
+export interface User {
     accepted_tos: boolean,
     bio: string,
     first_name: string,
@@ -18,7 +18,7 @@ export interface User{
     username: string
 }
  
-export interface UserLinks{
+export interface UserLinks {
     followers: string,
     following: string,
     html: string,
@@ -27,7 +27,7 @@ export interface UserLinks{
     portfolio: string,
     self: string
 }
-export interface UserProfileImg{
+export interface UserProfileImg {
     large: string,
     medium: string,
     small: string

@@ -1,6 +1,6 @@
 import { User } from "./user"
 
-export interface Photo{
+export interface Photo {
     categories: object,
     color: string,
     created_at: string,
@@ -20,7 +20,7 @@ export interface Photo{
     width: number
 }
 
-export interface PhotoUrls{
+export interface PhotoUrls {
     full: string,
     raw: string,
     regular: string,
@@ -28,14 +28,19 @@ export interface PhotoUrls{
     thumb: string
 }
 
-export interface PhotoLinks{
+export interface PhotoLinks {
     download: string,
     download_location: string,
     html: string,
     self: string,
 }
 
-export interface PreviewPhoto{
+export interface PreviewPhoto {
     id: number,
     urls: PhotoUrls
+}
+export interface SearchResult {
+	results: Photo[],
+	total: number,
+	total_pages: number
 }

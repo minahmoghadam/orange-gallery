@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { environment } from './../../environments/environment';
-import { Photo } from "./../models/photo";
+import { Photo, SearchResult } from "./../models/photo";
 import { Collection } from "./../models/collection";
 import { Observable } from "rxjs";
 @Injectable()
@@ -16,7 +16,7 @@ export class ApiService {
     /* @name  getRandomPhoto
      * @description get random photo
      */
-    getRandomPhoto(orientation: string):Observable<Photo> {
+    getRandomPhoto(orientation: string): Observable<Photo> {
         return this.http.get<Photo>(
             this.baseUrl + '/photos/random?orientation='+ orientation
         );
@@ -25,7 +25,7 @@ export class ApiService {
     /* @name  getListPhotos
      * @description get list of photos
      */
-    getListPhotos(perPage: number, page: number, orderBy: string):Observable<Photo[]> {
+    getListPhotos(perPage: number, page: number, orderBy: string): Observable<Photo[]> {
         return this.http.get<Photo[]>(
             this.baseUrl + '/photos/?per_page=' + perPage + '&page='+ page + '&order_by=' + orderBy
         );
@@ -34,26 +34,28 @@ export class ApiService {
     /* @name  getPhotoData
      * @description get details of photo
      */
-    getPhotoData(id: string):Observable<Collection> {
+    getPhotoData(id: string): Observable<Collection> {
         return this.http.get<Collection>(
             this.baseUrl + '/photos/' + id
         );
-    };
+	};
+	
     /* @name  getSearchResult
      * @description get result of search
      */
-    getSearchResult(query: string, perPage: number, page: number):Observable<Photo[]> {
-        return this.http.get<Photo[]>(
-            this.baseUrl + '/photos/search?query='+ query + '?per_page=' + perPage + '&page=' + page
+    getSearchResult(query: string, perPage: number, page: number): Observable<SearchResult> {
+        return this.http.get<SearchResult>(
+            this.baseUrl + '/search/photos?query='+ query + '?per_page=' + perPage + '&page=' + page
         );
     }
 
 
-    /************************************************ collection *********************************************** */
+	/************************************************ collection *********************************************** */
+	
     /* @name  getCollectionList
      * @description get list of collections
      */
-    getCollectionList(perPage: number, page: number):Observable<Collection[]> {
+    getCollectionList(perPage: number, page: number): Observable<Collection[]> {
         return this.http.get<Collection[]>(
             this.isLocal? 'api/collections.json': this.baseUrl + '/collections?per_page=' + perPage + '&page='+ page
         );

@@ -1,7 +1,7 @@
  <div id="wrapper">
     <app-header></app-header>
     <section class="content">
-		<h3 class="text-center title">search results for: {{search}} </h3>
+		<h3 class="text-center title">search results for: {{search}} (total: {{resultCount}} images)</h3>
 		<div class="row justify-content-around">
 			<div class="search-results" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="150" (scrolled)="photosScroll()"></div>
 			<div class="photo-holder" *ngFor="let photo of searchResult">
