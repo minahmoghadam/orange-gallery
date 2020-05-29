@@ -1,12 +1,17 @@
 @import "~sass/_variables";
 @import "~sass/_mixins";
 .photo {
-	img {
+	position: relative;
+	.main-img {
 		height: 200px;
+		min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 	}
 	margin: 0 3px;
 	.photo-user {
-		padding: 0.3em 0.8em;
+		width: 100%;
+		padding: 0.5em 0.8em;
 		font-size: 0.8em;
 		color: $white;
 		position: absolute;
@@ -20,6 +25,8 @@
 		background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%);
 		@include transition(opacity 0.2s);
 		box-sizing: border-box;
+		justify-content: space-between;
+		align-items: center;
 	}
 	&:hover {
 		.photo-user {

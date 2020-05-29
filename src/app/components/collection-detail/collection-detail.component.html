@@ -4,7 +4,7 @@
 		<h3 class="text-center title">{{collection.title}}</h3>
 		<div class="row zoom">
 			<div class="col-xl-4 col-md-4 col-sm-6 col-12">
-				<img [src]="cover" *ngIf="cover" zoom/>
+				<img class="rounded-top" [src]="cover" *ngIf="cover" zoom/>
 			</div>
 			<div class="col-xl-8 col-md-8 col-sm-6 col-12">
 				<div class="col-12 collection-user">
@@ -15,7 +15,7 @@
 						<div class="col-xl-9 col-md-9 col-sm-9 col-12">
 							<p>{{collection.user.username}}</p>
 							<p class="text-black-50" *ngIf="collection.user?.location">
-								<i class="fa fa-map-marker"></i>  {{collection.user.location}}
+								<i class="fa fa-map-marker"></i>{{collection.user.location}}
 							</p>
 							<p>{{collection.user.bio}}</p>
 						</div>
@@ -28,7 +28,7 @@
 				<div class="col-12">
 					<div class="row thumbs" *ngIf="collection?.preview_photos">
 						<div class="collection-thumb" *ngFor="let pCol of collection.preview_photos">
-							<img [src] ="pCol.urls.small" zoom/>
+							<img class="rounded-top" [src] ="pCol.urls.small" zoom/>
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 			</div>
 		</div>
 		<div class="collection-photo">
-			<h4 class="text-center">{{collection.total_photos}} <i class="fa fa-image"></i></h4>
+			<h4 class="text-center">{{collection.total_photos}}<i class="fa fa-image"></i></h4>
 
 			<!-- there are just 10 photos -> we dont need to scroll-->
 			<div class="row photos">

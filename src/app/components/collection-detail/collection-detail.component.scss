@@ -3,7 +3,7 @@
 
 .profile-img {
 	border-radius: 100%;
-	border: 2px solid $color-3-1;
+	border: 2px solid $primaryColor;
 }
 .tags {
 	margin: 0.5rem 0 0.5em 1rem;
@@ -40,7 +40,4 @@
 .photos {
 	justify-content: space-around;
 	
-}
-.photo-holder {
-	padding: 0.4rem 0;
 }

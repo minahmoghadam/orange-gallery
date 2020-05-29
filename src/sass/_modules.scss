@@ -47,6 +47,7 @@ section {
 .d-none {
 	display: none;
 }
+
 .d-block {
 	display: block;
 }
@@ -59,19 +60,34 @@ section {
 	border-top-left-radius: .25rem;
 	border-top-right-radius: .25rem;
 }
+
 .no-padding {
 	padding: 0 !important;
 }
 
+.btn {
+	padding: 0.3rem 0.5rem;
+	border-radius: 0.2rem;
+	border: none;
+	background-color: $primaryColor;
+	color: $black;
+}
+
+.photo-holder {
+	padding: 0.4rem 0;
+	flex-grow: 1;
+}
 /*************************** zoom module**************************/
 .zoom-overlay-open {
 	nav {
 		display: none;
 	}
 }
+
 .zoom-img, .zoom-img-wrap {
   z-index: 99999 !important;
 }
+
 .zoom {
 	img {
 		cursor: zoom-in;

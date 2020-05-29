@@ -2,24 +2,31 @@
 .single-photo {
 	.profile-img {
 		border-radius: 100%;
-		border: 2px solid $color-3-1;
+		border: 2px solid $primaryColor;
 	}
 
 	img {
 		margin: 0 auto;
 	}
+
 	.user {
 		p {
 			margin-bottom: 0.5em;
 		}
 	}
+
 	.download-link {
 		position: absolute;
-		top: 1em;
+		top: 1.5em;
 		left: 1.5em;
 	}
+
 	.photo-description {
 		margin-left: 1rem;
 		padding: 0.5rem;
+	}
+	
+	.photo-url {
+		position: relative;
 	}
 }

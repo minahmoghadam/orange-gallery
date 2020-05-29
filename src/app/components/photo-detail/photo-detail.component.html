@@ -3,10 +3,10 @@
 	<section class="content" *ngIf="photo">
 		<div class="single-photo row">
 			<div class="col-12 col-sm-12 col-md-6">
-				<div *ngIf="photo.urls">
+				<div class="photo-url" *ngIf="photo.urls">
 					<img *ngIf="photo.urls.regular" class="d-block rounded-top"  [src]="photo.urls.regular"/>
 					<div *ngIf="photo.links" class="download-link">
-						<a class="btn btn-sm btn-warning" href="{{photo.links.download}}" target="_blank" rel="nofollow">Download</a>
+						<a class="btn btn-download" href="{{photo.links.download}}" target="_blank" rel="nofollow">Download</a>
 					</div>
 				</div>
 			</div>
@@ -18,21 +18,21 @@
 					<div class="col-md-12 col-sm-12 col-12">
 						<p class="text-center">{{photo.user.username}}</p>
 						<p class="text-black-50 text-center" *ngIf="photo.user.location">
-							<i class="fa fa-map-marker"></i>  {{photo.user.location}}
+							<i class="fa fa-map-marker"></i>{{photo.user.location}}
 						</p>
 						<p class="">{{photo.user.bio}}</p>
 						<br/>
 
 						<div class="row col-12">
 							<div class="col-xl-4 col-md-12 col-sm-12 col-12">
-								<p><i class="fa fa-heart"></i> {{photo.likes | number}}</p>
-								<p><i class="fa fa-download"></i> {{photo.downloads | number}}</p>
-								<p><i class="fa fa-eye"></i> {{photo.views | number}}</p>
+								<p><i class="fa fa-heart"></i>{{photo.likes | number}}</p>
+								<p><i class="fa fa-download"></i>{{photo.downloads | number}}</p>
+								<p><i class="fa fa-eye"></i>{{photo.views | number}}</p>
 							</div>
 							<div class="col-xl-8 col-md-12 col-sm-12 col-12">
-								<p *ngIf="photo.user.instagram_username"><i class="fa fa-instagram"></i>  {{photo.user.instagram_username}}</p>
-								<p *ngIf="photo.user.twitter_username"> <i class="fa fa-twitter"></i>  {{photo.user.twitter_username}}</p>
-								<p *ngIf="photo.user.portfolio_url"> <i class="fa fa-globe"></i>  {{photo.user.portfolio_url}}</p>
+								<p *ngIf="photo.user.instagram_username"><i class="fa fa-instagram"></i>{{photo.user.instagram_username}}</p>
+								<p *ngIf="photo.user.twitter_username"> <i class="fa fa-twitter"></i>{{photo.user.twitter_username}}</p>
+								<p *ngIf="photo.user.portfolio_url"> <i class="fa fa-globe"></i>{{photo.user.portfolio_url}}</p>
 							</div>
 						</div>
 					</div>
